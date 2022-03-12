@@ -23,6 +23,24 @@ Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usu
 GET /products
 POSt /producs
 
+Formato da requisição para cadastrar: 
+`
+{
+  "name": "Tortinha",
+  "description": "Uma tortinha bem gostosa",
+  "price": "1.99" 
+}
+`
+
 ## Cart
 GET /cart
 POST /cart
+
+Formato da requisição para adicionar ao carrinho:
+
+`
+{
+  "productId": 1,
+  "qty": 2
+}
+`
